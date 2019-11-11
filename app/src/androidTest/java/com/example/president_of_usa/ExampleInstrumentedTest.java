@@ -1,4 +1,4 @@
-package com.example.usa_presidents;
+package com.example.president_of_usa;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.example.usa_presidents", appContext.getPackageName());
+        assertEquals("com.example.president_of_usa", appContext.getPackageName());
     }
 }

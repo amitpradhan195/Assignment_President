@@ -4,24 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".DashboardActivity"
+    android:orientation="horizontal"
+    tools:context=".Activity.activity_dashboard"
     android:layout_margin="10dp"
     >
+
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="President of USA"
         android:id="@+id/btnPresidents"
-        android:layout_marginTop="25dp">
+        android:layout_width="165dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:background="#3498db"
+        android:text="PRESIDENTS OF USA"
+        android:textStyle="bold"
+        android:textColor="#fdfefe">
 
     </Button>
+
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Form"
         android:id="@+id/btnForm"
-        android:layout_marginTop="25dp">
+        android:layout_width="165dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="#3498db"
+        android:text="Register Form"
+        android:textStyle="bold"
+        android:textColor="#fdfefe">
 
     </Button>
 

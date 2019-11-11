@@ -1,12 +1,12 @@
-package com.example.usa_presidents;
+package com.example.president_of_usa.Model;
 
-public class Presidents {
+public class model_presidents {
 
     private String name;
     private int image;
     private String about;
 
-    public Presidents(String name, int image,String about) {
+    public model_presidents(String name, int image, String about) {
         this.name = name;
         this.image = image;
         this.about = about;

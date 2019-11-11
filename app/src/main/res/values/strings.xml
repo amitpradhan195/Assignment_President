@@ -1,12 +1,15 @@
 <resources>
-    <string name="app_name">USA_presidents</string>
-    <string name="personal">Personal Details</string>
+    <string name="app_name">president_of_usa</string>
+    <string name="personal">Your Details</string>
     <string-array name="address">
+        <item>Jhapa</item>
+        <item>Taplejung</item>
+        <item>Bhadrapur</item>
+        <item>Morang</item>
         <item>Kathmandu</item>
-        <item>Bhaktapur</item>
-        <item>Lalitpur</item>
         <item>Pokhara</item>
-        <item>Dharan</item>
+        <item>Illam</item>
+        <item>Koshi</item>
     </string-array>
 
 </resources>

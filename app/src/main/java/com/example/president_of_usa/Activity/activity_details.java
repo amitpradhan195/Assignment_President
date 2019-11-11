@@ -1,15 +1,16 @@
-package com.example.usa_presidents;
+package com.example.president_of_usa.Activity;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.example.president_of_usa.R;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class DetailsActivity extends AppCompatActivity {
+public class activity_details extends AppCompatActivity {
      TextView fullName, about;
      CircleImageView imgProfile;
 
@@ -17,10 +18,6 @@ public class DetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
-
-        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
-
-        //getSupportActionBar().setTitle('');
 
         ActionBar name = getSupportActionBar();
 

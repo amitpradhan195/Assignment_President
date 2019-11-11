@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SpinnerDisplayActivity"
+    tools:context=".Activity.activity_displayInfo"
     android:layout_gravity="center"
     android:orientation="vertical"
     android:layout_margin="10dp">
@@ -38,6 +38,21 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Your Age :"
+        android:textSize="25dp"
+        android:textColor="#34495E"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age Here :"
+        android:id="@+id/yAge"
+        android:textSize="20dp"
+        android:textColor="#F39C12"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Your Phone Number :"
         android:textSize="25dp"
         android:textColor="#34495E"
@@ -61,7 +76,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/email"
-        android:text="#F39C12"
+        android:text="Your Email"
         android:textSize="20dp"
         android:textColor="#F39C12"
         android:layout_marginTop="10dp"/>

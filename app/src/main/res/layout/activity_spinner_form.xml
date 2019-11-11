@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SpinnerFormActivity"
+    tools:context=".Activity.activity_InputInfo"
     android:orientation="vertical"
     android:layout_gravity="center">
 
@@ -14,7 +14,8 @@
         android:text="@string/personal"
         android:textSize="40dp"
         android:layout_marginBottom="75dp"
-        android:textColor="@color/blue"
+        android:textColor="#1f618d"
+        android:textStyle="bold"
         android:layout_gravity="center"/>
     <EditText
         android:layout_width="match_parent"
@@ -22,6 +23,14 @@
         android:layout_marginTop="10dp"
         android:id="@+id/pName"
         android:hint="Enter your name"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/yourAge"
+        android:hint="Enter your Age"
+        android:inputType="number"
         />
     <EditText
         android:layout_width="match_parent"

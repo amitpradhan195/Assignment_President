@@ -1,4 +1,4 @@
-package com.example.usa_presidents;
+package com.example.president_of_usa;
 
 import org.junit.Test;
 

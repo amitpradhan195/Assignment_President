@@ -1,4 +1,4 @@
-package com.example.usa_presidents;
+package com.example.president_of_usa.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,15 +10,19 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.president_of_usa.Activity.activity_details;
+import com.example.president_of_usa.Model.model_presidents;
+import com.example.president_of_usa.R;
+
 import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class PresidentsAdapter extends RecyclerView.Adapter<PresidentsAdapter.PresidentsViewHolder> {
+public class adapter_presidents extends RecyclerView.Adapter<adapter_presidents.PresidentsViewHolder> {
     Context mContext;
-    List<Presidents> presidentsList;
+    List<model_presidents> presidentsList;
 
-    public PresidentsAdapter(Context mContext, List<Presidents> presidentsList) {
+    public adapter_presidents(Context mContext, List<model_presidents> presidentsList) {
         this.mContext = mContext;
         this.presidentsList=presidentsList;
     }
@@ -32,19 +36,19 @@ public class PresidentsAdapter extends RecyclerView.Adapter<PresidentsAdapter.Pr
 
     @Override
     public void onBindViewHolder(@NonNull PresidentsViewHolder holder, int i) {
-        final Presidents presidents = presidentsList.get(i);
-        holder.imgProfile.setImageResource(presidents.getImage());
-        holder.presidentName.setText(presidents.getName());
-        //holder.about.setText(presidents.getAbout());
+        final model_presidents modelpresidents = presidentsList.get(i);
+        holder.imgProfile.setImageResource(modelpresidents.getImage());
+        holder.presidentName.setText(modelpresidents.getName());
+        //holder.about.setText(modelpresidents.getAbout());
 
         holder.imgProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(mContext,DetailsActivity.class);
+                Intent intent = new Intent(mContext, activity_details.class);
 
-                intent.putExtra("image",presidents.getImage());
-                intent.putExtra("name",presidents.getName());
-                intent.putExtra("about",presidents.getAbout());
+                intent.putExtra("image", modelpresidents.getImage());
+                intent.putExtra("name", modelpresidents.getName());
+                intent.putExtra("about", modelpresidents.getAbout());
 
                 mContext.startActivity(intent);
             }

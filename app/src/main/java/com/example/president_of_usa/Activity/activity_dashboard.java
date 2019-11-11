@@ -1,4 +1,4 @@
-package com.example.usa_presidents;
+package com.example.president_of_usa.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class DashboardActivity extends AppCompatActivity implements View.OnClickListener {
+import com.example.president_of_usa.R;
+
+public class activity_dashboard extends AppCompatActivity implements View.OnClickListener {
 
     Button btn1,btn2;
 
@@ -30,7 +32,7 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
             startActivity(intent);
         }
         else{
-            Intent intent = new Intent(this,SpinnerFormActivity.class);
+            Intent intent = new Intent(this, activity_InputInfo.class);
             startActivity(intent);
         }
 
