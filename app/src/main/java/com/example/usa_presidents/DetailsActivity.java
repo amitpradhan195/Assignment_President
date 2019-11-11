@@ -1,5 +1,6 @@
 package com.example.usa_presidents;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -18,11 +19,16 @@ public class DetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_details);
 
         getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle('');
+
+        //getSupportActionBar().setTitle('');
+
+        ActionBar name = getSupportActionBar();
+
 
         fullName = findViewById(R.id.fullName);
         about =findViewById(R.id.about);
         imgProfile = findViewById(R.id.imgProfile);
+
 
         Bundle bundle = getIntent().getExtras();
 
@@ -31,7 +37,7 @@ public class DetailsActivity extends AppCompatActivity {
            fullName.setText(bundle.getString("name"));
            about.setText(bundle.getString("about"));
            imgProfile.setImageResource(bundle.getInt("image"));
-           
+           name.setTitle(fullName.getText().toString());
         }
 
 
